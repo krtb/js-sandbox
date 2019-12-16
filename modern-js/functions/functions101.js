@@ -9,7 +9,8 @@ greetUser()
 greetUser()
 
 let squareThis = function (num) {
-    console.log(num);
+    let result = num * num
+    console.log(result);
 }
 
 squareThis(4)
