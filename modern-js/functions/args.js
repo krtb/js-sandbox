@@ -7,11 +7,11 @@ let result = add(10,1,5)
 console.log(result);
 
 // DEFAULT ARGUMENTS
-let getScoreText = function (name, score = 0) {
-    console.log(name);
-    console.log(score);
+let getScoreText = function (name = 'anonymous', score = 0) {
+    return 'Name: ' + name + '- Score: ' + score
 }
 
 // getScoreText() => by default if no argument value, undefined is result
 // provide default value, which WAS undefined, not provided in function
-getScoreText()
+let scoreText = getScoreText()
+return console.log(scoreText);
