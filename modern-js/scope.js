@@ -8,7 +8,8 @@
 
 // global scope = varOne
     // local scope = varTwo
-    // local scope = varThree
+        // local scope = varFour
+    // local scope = varThree 
 
 let varOne = "varOne"
 
@@ -16,6 +17,10 @@ if (true) {
     console.log(varOne);
     let varTwo = "varTwo"
     console.log(varTwo);  
+
+    if (true) {
+        let varFour = "varFour"
+    }
 }
 
 if (true) {
