@@ -13,6 +13,11 @@ if (true) {
     let name = "not me"  
 
     if (true) {
+        // changes name var to not found,
+        // stops at 'not me', changes to 'not found'
+        // doesn't change the global scope variable 
+        name = "not found"
+
         // scope tree traversed upwards to find first definition of variable
         console.log(name, 'nested child'); // result = "not me"
     }
