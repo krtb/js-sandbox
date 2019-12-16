@@ -10,14 +10,14 @@ let name = "me"
 if (true) { 
     // variable shadowing
     // local variable value (shadowing) over parent above
-    let name = "not me"
+    let name = "not me"  
 
     if (true) {
         // scope tree traversed upwards to find first definition of variable
-        console.log(name);
+        console.log(name, 'nested child'); // result = "not me"
     }
 }
 
 if (true) {
-    
+    console.log(name, 'looking in global scope'); // result = "me"
 }
