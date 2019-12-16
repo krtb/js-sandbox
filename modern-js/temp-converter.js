@@ -8,3 +8,12 @@ function celsiusConverter(params) {
 }
 
 celsiusConverter(fahrenheit)
+
+// calculate kelvin value and store in variable
+//  print value
+function kelvinConverter(params) {
+    let convertedTemp = ((params - 32) * 5 / 9) + 273.15
+    console.log(convertedTemp);
+}
+
+kelvinConverter(fahrenheit)
